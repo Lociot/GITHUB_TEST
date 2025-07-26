@@ -1,6 +1,4 @@
 var test =0; 
-
-void MediaDeviceInfo()
-
-
-test ++; 
+for(int i =0 ; i<11; i++){
+    test ++1;
+}
