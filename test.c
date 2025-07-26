@@ -13,10 +13,17 @@ struct Example2 { // optimization
     char a; // 1 byte 
     int c;  // 4 byte
 };
+struct Example3 { // optimization
+  
+    char b; // 1 byte
+    int a; // 1 byte 
+    int c;  // 4 byte
+};
 int main() {
     int n;
     printf("%lu\n", sizeof(struct Example1)); // 12
      printf("%lu\n", sizeof(struct Example2)); // 8 
+          printf("%lu\n", sizeof(struct Example3)); // 8 
     scanf("%d",&n);
     printf("địa chỉ của biến n: %x", &n);
 }
